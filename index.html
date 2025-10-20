@@ -46,11 +46,11 @@
             border: 2 px solid rgba (255, 255, 255, 0.3);
         }
 
-        @keyframes pulse {
+         @ keyframes pulse {
 
             0%,
             100% {
-                transform: translate(-50%, -50%) scale(1);
+                transform: translate (-50 %, -50 %) scale (1);
             }
 
             50% {
@@ -60,21 +60,21 @@
 
         .center-message strong {
             display: block;
-            font-size: 2rem;
-            margin-bottom: 15px;
+            font-size: 2 rem;
+            margin-bottom: 15 px;
             font-weight: 700;
-            background: linear-gradient(45deg, #d81b60, #f06292, #d81b60);
-            background-size: 200% auto;
+            background: linear-gradient (45 deg, #d81b60, #f06292, #d81b60);
+            background-size: 200 % auto;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
-            animation: gradient 3s ease infinite;
+            animation: gradient 3 s ease infinite;
         }
 
-        @keyframes gradient {
+        @ keyframes gradient {
 
             0%,
             100% {
-                background-position: 0% 50%;
+                background-position: 0 % 50 %;
             }
 
             50% {
@@ -86,21 +86,21 @@
             position: fixed;
             top: 0;
             left: 0;
-            width: 100vw;
-            height: 100vh;
-            background: rgba(0, 0, 0, 0.5);
-            backdrop-filter: blur(5px);
+            width: 100 vw;
+            height: 100 vh;
+            background: rgba (0, 0, 0, 0.5);
+            backdrop-filter: blur (5 px);
             z-index: 99;
             display: none;
-            animation: fadeInOverlay 0.3s ease;
+            animation: fadeInOverlay 0.3 s ease;
         }
 
-        @keyframes fadeInOverlay {
-            from {
+        @ keyframes fadeInOverlay {
+            from  {
                 opacity: 0;
             }
 
-            to {
+         to {
                 opacity: 1;
             }
         }
@@ -111,26 +111,26 @@
 
         .popup {
             position: fixed;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%) scale(0.8);
-            background: linear-gradient(135deg, #ffffff 0%, #fff5f8 100%);
-            border-radius: 25px;
-            box-shadow: 0 25px 80px rgba(216, 27, 96, 0.4);
-            padding: 30px;
+            top: 50 %;
+            left: 50 %;
+            transform: translate (-50 %, -50 %) scale (0.8);
+            background: linear-gradient (135 deg, #ffffff 0 %, #fff5f8 100 %);
+            border-radius: 25 px;
+            box-shadow: 0 25 px 80 px rgba (216, 27, 96, 0.4);
+            padding: 30 px;
             text-align: center;
             z-index: 100;
-            width: 90%;
-            max-width: 400px;
+            width: 90 %;
+            max-width: 400 px;
             display: none;
-            animation: popupShow 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55) forwards;
-            border: 3px solid rgba(255, 255, 255, 0.8);
+            animation: popupShow 0.5 s cubic-bezier (0.68, -0.55, 0.265, 1.55) forwards;
+            border: 3 px solid rgba (255, 255, 255, 0.8);
         }
 
-        @keyframes popupShow {
+        @ keyframes popupShow {
             from {
                 opacity: 0;
-                transform: translate(-50%, -50%) scale(0.5) rotate(-5deg);
+                transform: translate (-50 %, -50 %) scale (0.5) rotate (-5 deg);
             }
 
             to {
@@ -149,11 +149,11 @@
             animation: bounce 1s ease-in-out infinite;
         } */
 
-        @keyframes bounce {
+        @ keyframes bounce {
 
             0%,
             100% {
-                transform: translateX(-50%) translateY(0);
+                transform: translateX (-50 %) translateY (0);
             }
 
             50% {
@@ -162,47 +162,47 @@
         }
 
         .popup-content {
-            margin-top: 20px;
+            margin-top: 20 px;
         }
 
         .popup img {
-            max-width: 100%;
-            border-radius: 15px;
-            margin-bottom: 20px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-            border: 3px solid white;
+            max-width: 100 %;
+            border-radius: 15 px;
+            margin-bottom: 20 px;
+            box-shadow: 0 10 px 30 px rgba (0, 0, 0, 0.2);
+            border: 3 px solid white;
         }
 
         .popup p {
-            font-size: 1.1rem;
+            font-size: 1.1 rem;
             color: #d81b60;
             line-height: 1.6;
-            margin-bottom: 20px;
+            margin-bottom: 20 px;
             font-weight: 500;
         }
 
         .popup button {
-            margin-top: 10px;
-            background: linear-gradient(135deg, #d81b60 0%, #f06292 100%);
+            margin-top: 10 px;
+            background: linear-gradient (135 deg, #d81b60 0 %, #f06292 100 %);
             color: white;
             border: none;
-            padding: 12px 30px;
-            border-radius: 25px;
+            padding: 12 px 30 px;
+            border-radius: 25 px;
             cursor: pointer;
-            font-size: 1rem;
+            font-size: 1 rem;
             font-weight: 600;
-            box-shadow: 0 5px 20px rgba(216, 27, 96, 0.4);
-            transition: all 0.3s ease;
+            box-shadow: 0 5 px 20 px rgba (216, 27, 96, 0.4);
+            transition: all 0.3 s ease;
         }
 
         .popup button:hover {
-            background: linear-gradient(135deg, #ad1457 0%, #e91e63 100%);
-            transform: translateY(-2px);
-            box-shadow: 0 8px 25px rgba(216, 27, 96, 0.5);
+            background: linear-gradient (135 deg, #ad1457 0 %, #e91e63 100 %);
+            transform: translateY (-2 px);
+            box-shadow: 0 8 px 25 px rgba (216, 27, 96, 0.5);
         }
 
         .popup button:active {
-            transform: translateY(0);
+            transform: translateY (0);
         }
 
         .falling-letter {
@@ -516,6 +516,7 @@
 
 
 </html>
+
 
 
 
