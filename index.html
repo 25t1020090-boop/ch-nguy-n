@@ -46,7 +46,7 @@
             border: 2 px solid rgba (255, 255, 255, 0.3);
         }
 
-         @ keyframes pulse {
+         @keyframes pulse {
 
             0%,
             100% {
@@ -70,7 +70,7 @@
             animation: gradient 3 s ease infinite;
         }
 
-        @ keyframes gradient {
+        @keyframes gradient {
 
             0%,
             100% {
@@ -95,7 +95,7 @@
             animation: fadeInOverlay 0.3 s ease;
         }
 
-        @ keyframes fadeInOverlay {
+        @keyframes fadeInOverlay {
             from  {
                 opacity: 0;
             }
@@ -127,7 +127,7 @@
             border: 3 px solid rgba (255, 255, 255, 0.8);
         }
 
-        @ keyframes popupShow {
+        @keyframes popupShow {
             from {
                 opacity: 0;
                 transform: translate (-50 %, -50 %) scale (0.5) rotate (-5 deg);
@@ -149,7 +149,7 @@
             animation: bounce 1s ease-in-out infinite;
         } */
 
-        @ keyframes bounce {
+        @keyframes bounce {
 
             0%,
             100% {
@@ -186,19 +186,19 @@
             background: linear-gradient (135 deg, #d81b60 0 %, #f06292 100 %);
             color: white;
             border: none;
-            padding: 12 px 30 px;
-            border-radius: 25 px;
+            padding: 12px 30px;
+            border-radius: 25px;
             cursor: pointer;
-            font-size: 1 rem;
+            font-size: 1rem;
             font-weight: 600;
-            box-shadow: 0 5 px 20 px rgba (216, 27, 96, 0.4);
-            transition: all 0.3 s ease;
+            box-shadow: 0 5px 20px rgba(216, 27, 96, 0.4);
+            transition: all 0.3s ease;
         }
 
         .popup button:hover {
-            background: linear-gradient (135 deg, #ad1457 0 %, #e91e63 100 %);
-            transform: translateY (-2 px);
-            box-shadow: 0 8 px 25 px rgba (216, 27, 96, 0.5);
+            background: linear-gradient (135deg, #ad1457 0%, #e91e63 100 %);
+            transform: translateY (-2px);
+            box-shadow: 0 8px 25px rgba(216, 27, 96, 0.5);
         }
 
         .popup button:active {
@@ -207,24 +207,24 @@
 
         .falling-letter {
             position: absolute;
-            top: -100 px;
-            width: 50 px;
+            top: -100px;
+            width: 50px;
             height: auto;
             animation: fall linear;
             cursor: pointer;
             user-select: none;
             z-index: 2;
-            animation-duration: 8 s;
-            filter: drop-shadow (0 5 px 10 px rgba (0, 0, 0, 0.2));
-            transition: transform 0.3 s ease;
+            animation-duration: 8s;
+            filter: drop-shadow (0 5px 10px rgba(0, 0, 0, 0.2));
+            transition: transform 0.3s ease;
         }
 
         .falling-letter:hover {
-            transform: scale (1.2) rotate (10 deg);
-            filter: drop-shadow (0 10 px 20 px rgba (216, 27, 96, 0.4));
+            transform: scale(1.2) rotate(10deg);
+            filter: drop-shadow (0 10px 20px rgba(216, 27, 96, 0.4));
         }
 
-        @ keyframes fall {
+        @keyframes fall {
             0% {
                 transform: translateY (0) translateX (0) rotate (0 deg);
                 opacity: 1;
@@ -243,7 +243,7 @@
             }
 
             80% {
-                transform: translateY (80 vh) translateX (10 px) rotate (4 deg);
+                transform: translateY (80vh) translateX (10px) rotate (4deg);
             }
 
             100% {
@@ -252,9 +252,9 @@
             }
         }
 
-        @ keyframes letterClick {
+        @keyframes letterClick {
             0% {
-                transform: scale (1) rotate (0 deg);
+                transform: scale(1) rotate(0 deg);
             }
 
             50% {
@@ -262,25 +262,25 @@
             }
 
             100% {
-                transform: scale (0) rotate (720 deg);
+                transform: scale(0) rotate(720deg);
             }
         }
 
         .letter-clicked {
-            animation: letterClick 0.6 s ease-out forwards ! important;
+            animation: letterClick 0.6s ease-out forwards !important;
         }
 
         .heart {
             position: absolute;
-            transform: translate (-50 %, -50 %);
-            animation: explode 2 s ease-out forwards;
+            transform: translate (-50%, -50%);
+            animation: explode 2s ease-out forwards;
             pointer-events: none;
             user-select: none;
         }
 
-        @ keyframes explode {
+        @keyframes explode {
             0% {
-                transform: translate (-50 %, -50 %) translate (0, 0);
+                transform: translate (-50%, -50%) translate (0, 0);
                 opacity: 1;
             }
 
@@ -292,11 +292,11 @@
 
         .center-gif {
             position: fixed;
-            bottom: 20 px;
-            left: 50 %;
-            transform: translateX (-50 %);
-            width: 150 px;
-            max-width: 40 vw;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX (-50%);
+            width: 150px;
+            max-width: 40vw;
             z-index: 10;
             pointer-events: none;
         }
@@ -304,7 +304,7 @@
         /* ------------------------------
         Responsive cho màn hình nhỏ
         ---------------------------------- */
-        @ media (max-width: 768 px) {
+        @media (max-width: 768px) {
             .center-message {
                 width: calc (100% - 20px);
                 max-width: none;
@@ -409,6 +409,18 @@
             {
                 img: "n3.jng.jpg",
                 text: "Chị là món quà tuyệt vời nhất mà cuộc sống mang lại! "
+            }
+              {
+                img: "n5.jng.jpg",
+                text: "Chúc chị 20/10 thật nhiều niềm vui, luôn tự tin và thành công trong mọi điều! "
+            }
+             {
+                img: "n7.jng.jpg",
+                text: "Chúc chị/em ngày 20/10 nhận được thật nhiều yêu thương và luôn tỏa sáng! "
+            }
+             {
+                img: "n8.jng.jpg",
+                text: "Chúc chị luôn tỏa sáng rực rỡ, xinh đẹp như 'nữ thần' và đặc biệt là có một 'tâm hồn' ăn uống vô tận nhưng cơ thể thì 'mi nhon' mãi mãi! "
             }
         ];
 
@@ -516,6 +528,7 @@
 
 
 </html>
+
 
 
 
